@@ -3,5 +3,31 @@
 
 
 ### 서블릿 챕터 5장
-![2](https://user-images.githubusercontent.com/96603612/209158874-f46c2b1d-3972-4d4c-9ff4-a5806b8a897a.png)
-![5](https://user-images.githubusercontent.com/96603612/209158877-da7b0c17-0580-41da-bd5a-dfa511c90a51.png)
+
+#### 서블릿 메서드 호출
+  import java.io.IOException;
+
+  import javax.servlet.ServletException;
+  import javax.servlet.http.HttpServlet;
+  import javax.servlet.http.HttpServletRequest;
+  import javax.servlet.http.HttpServletResponse;
+
+  public class FirstServlet extends HttpServlet{
+
+    @Override
+    public void init() throws ServletException{
+      System.out.println("init 메서드 호출");
+    }
+
+    //브라우저의 요청 처리
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    throws ServletException, IOException{
+      System.out.println("doGet 메서드 호출");
+    }
+
+    @Override
+    public void destroy() {
+      System.out.println("destroy 메서드 호출");
+    }
+  }
