@@ -1,5 +1,11 @@
 # Java_web_handling
 자바 웹을 다루는 기술
+
+## 책에서 배우고자 하는 내용
+1. 서블릿
+2. 스프링 + MyBatis
+3. 스프링을 이용한 쇼핑몰구축
+
 ## 책 이미지
 ![image](https://user-images.githubusercontent.com/96603612/209159653-086fd4f6-f6f0-44c0-96ea-f81a86487fdc.png)
 
